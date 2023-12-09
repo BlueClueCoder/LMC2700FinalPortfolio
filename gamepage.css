@@ -53,7 +53,7 @@ p {
   
 .pic1 { 
     grid-area: pic1;
-    background-image: url("../images/twilight.jpg");
+    background-image: url("images/twilight.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -173,7 +173,7 @@ p {
 .game-studies {
     grid-area: game-studies;
     /*set background image to prototype*/
-    background-image: url("../images/prototype.jpg");
+    background-image: url("images/prototype.jpg");
     background-size: cover;
 }
 
@@ -186,7 +186,7 @@ p {
   
 .obj-and-design { 
     grid-area: obj-and-design; 
-    background-image: url("../images/agile.jpeg");
+    background-image: url("images/agile.jpeg");
     background-size: cover;
 }
   
