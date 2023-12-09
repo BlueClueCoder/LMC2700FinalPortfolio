@@ -67,7 +67,7 @@ h1, h2, h3 {
   
   .pic1 {
     grid-area: pic1;
-    background-image: url(/images/paintbrushes.jpeg);
+    background-image: url("paintbrushes.jpeg");
     background-size: cover;
     background-position: top right;
 }
@@ -244,7 +244,7 @@ h1, h2, h3 {
   
   .fav-artists { 
     grid-area: fav-artists;
-    background-image: url(/images/rozalski.jpeg);
+    background-image: url("rozalski.jpeg");
     background-size: cover;
     background-position: top right;
     }
