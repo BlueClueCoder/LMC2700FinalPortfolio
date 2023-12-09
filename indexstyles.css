@@ -183,8 +183,6 @@ header {
 .games {
     background-image: url("boardgamebackground.jpeg");
     background-size: cover;
-    background-position: top right;
-    padding-bottom: 100px;
 }
 
 .games h2 {
