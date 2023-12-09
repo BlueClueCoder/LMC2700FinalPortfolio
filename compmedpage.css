@@ -1,0 +1,172 @@
+/*
+color palette
+rich black: #010B13
+prussian blue: #003153
+cerulean: #437F97
+olive: #849324
+selective yellow: #FFB30F
+jasper: #CD4631
+almost white: #F7FFF7
+*/
+
+body {
+    color: #010B13;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.5fr 1fr 1fr 0.5fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav-bar nav-bar"
+      "class-desc class-desc"
+      "portfolio chatbot"
+      "aframe game"
+      "summary summary";
+  }
+  
+.nav-bar {
+    grid-area: nav-bar;
+    background-color: #010B13
+}
+
+.nav-bar table {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar td {
+    color: #F7FFF7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar td a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    padding: 5px 5px;
+}
+
+.nav-bar td a:hover {
+    background-color: #F7FFF7;
+    color: black;
+}
+
+.nav-bar td a.active {
+    background-color: #FFB30F;
+    color: white;
+}
+
+
+  
+  .class-desc { 
+    grid-area: class-desc; 
+    background-color: olive;
+    font-size: 20px;
+    }
+  
+  .portfolio {
+    grid-area: portfolio;
+    background-color: #437F97;
+}
+
+.portfolio embed {
+    margin-left: 25px;
+}
+  
+  .chatbot {
+    grid-area: chatbot;
+    background-color: #CD4631;
+}
+
+.chatbot h2 {
+    font-size: 50px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.chat-table {
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    margin-left: 25px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+  
+  .aframe {
+    grid-area: aframe;
+    background-color: #003153;
+    color: white;
+    }
+
+    .aframe embed {
+        margin-left: 40px;
+    }
+  
+  .game { grid-area: game; 
+    background-color: #FFB30F;
+}
+
+.game img {
+    margin-left: 100px;
+}
+  
+  .summary { 
+    grid-area: summary; 
+    background-color: olive;
+    font-size: 20px;
+    }
+
+.other-link {
+    border: 4px solid #003153;
+    background-color: #003153;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.other-link:hover {
+    background-color: white;
+    border: 4px solid white;
+    color: #437F97;
+}
+
+  

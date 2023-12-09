@@ -1,0 +1,259 @@
+/*
+color palette
+rich black: #010B13
+prussian blue: #003153
+cerulean: #437F97
+olive: #849324
+selective yellow: #FFB30F
+jasper: #CD4631
+almost white: #F7FFF7
+*/
+
+body {
+    color: #010B13;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Bad Script', cursive;
+    margin: 0;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    margin-left: 10px;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav-bar nav-bar nav-bar nav-bar"
+      "intro intro intro pic1"
+      "proj1 proj2 proj3 side-note"
+      "proj4 proj5 proj6 side-note"
+      "learned learned learn-more fav-artists";
+      
+        
+  }
+  
+  .intro { 
+    grid-area: intro; 
+    background-color: #003153;
+    color: white;
+    }
+    .intro p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .intro h1 {
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+  
+  .pic1 {
+    grid-area: pic1;
+    background-image: url(../images/paintbrushes.jpeg);
+    background-size: cover;
+    background-position: top right;
+}
+  
+.nav-bar {
+    grid-area: nav-bar;
+    background-color: #010B13
+}
+
+.nav-bar table {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar td {
+    color: #F7FFF7;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar td a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    padding: 5px 5px;
+}
+
+.nav-bar td a:hover {
+    background-color: #F7FFF7;
+    color: black;
+}
+
+.nav-bar td a.active {
+    background-color: #FFB30F;
+    color: white;
+}
+  
+  .proj1 { 
+    grid-area: proj1;
+    background-color: olive;
+    text-align: center;
+    }
+
+    .proj1 img {
+        float: left;
+        margin-left: 47px;
+    }
+  
+  .proj2 { 
+    grid-area: proj2;
+    background-color: #437F97;
+    text-align: center;
+    }
+
+    .proj2 img {
+        float: left;
+        margin-left: 47px;
+    }
+  
+  .proj3 { 
+    background-color: olive;
+    grid-area: proj3;
+    text-align: center; 
+    }
+
+    .proj3 img {
+        float: left;
+        margin-left: 47px;
+        
+    }
+  
+  .proj4 { 
+    grid-area: proj4;
+    background-color: #437F97;
+    text-align: center;
+    }
+
+    .proj4 img {
+        float: left;
+        margin-left: 47px;
+    }
+  
+  .proj5 {
+    grid-area: proj5;
+    background-color: olive;
+    text-align: center;
+    }
+
+    .proj5 img {
+        float: left;
+        margin-left: 47px;
+    }
+  
+  .proj6 { 
+    grid-area: proj6;
+    background-color: #437F97;
+    text-align: center;
+    }
+
+    .proj6 img {
+        float: left;
+        margin-left: 47px;
+    }
+  
+  .side-note {
+    grid-area: side-note;
+    background-color: #FFB30F;
+    }
+
+    .side-note p {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .side-note h2{
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+  
+  .learned {
+    grid-area: learned;
+    background-color: #FFB30F;
+    }
+
+    .learned h2 {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .learned p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+  .learn-more {
+    grid-area: learn-more;
+    background-color: #003153;
+    color: white;
+    }
+
+    .learn-more h2 {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .learn-more ul {
+        list-style-type: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .learn-more a {
+        color: #FFB30F;
+        text-decoration: none;
+    }
+
+    .learn-more a:hover {
+        color: white;
+    }
+
+    .learn-more p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+  
+  .fav-artists { 
+    grid-area: fav-artists;
+    background-image: url(../images/rozalski.jpeg);
+    background-size: cover;
+    background-position: top right;
+    }
+
+    .fav-artists h2 {
+        /*go to bottom of cell*/
+        padding-top: 330px;
+        padding-left: 10px;
+        color: white;
+        font-size: 27px;
+    }
+  
