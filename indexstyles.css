@@ -181,7 +181,7 @@ header {
 /*Games
 --------------------*/
 .games {
-    background-image: url(../images/boardgamebackground.jpeg);
+    background-image: url("boardgamebackground.jpeg");
     background-size: cover;
     background-position: top right;
     padding-bottom: 100px;
